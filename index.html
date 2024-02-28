@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>AluraBooks</title>
+</head>
+
+<body>
+    <header class="white-header">
+        <div class="container">
+            <label for="menu">
+                <span class="header-menu container-image"></span>
+            </label>
+            <input type="checkbox" id="menu" class="container-button">
+            <ul class="menu-list">
+                <li class="menu-list-title">Categories</li>
+                <li class="menu-list-item">
+                    <a href="#" , class="menu-list-link">Programming</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" , class="menu-list-link">Front End</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" , class="menu-list-link">Infrastructure</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" , class="menu-list-link">Business</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" , class="menu-list-link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="assets/logo.svg" alt="AluraBooks Logo" class="container-image">
+        </div>
+        <div class="container">
+            <a href="#"><img src="assets/favorites.svg" alt="My Favorites" class="container-image"></a>
+            <a href="#"><img src="assets/shopping.svg" alt="Shopping Cart" class="container-image"></a>
+            <a href="#"><img src="assets/user.svg" alt="Profile" class="container-image"></a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2>Já sabe por onde começar?</h2>
+        <p class="banner-text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner-search" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrousel">
+        <h2 class="carrousel-title">Novos lançamentos</h2>
+
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/book1.svg" alt="Livro 1"></div>
+                <div class="swiper-slide"><img src="assets/book2.svg" alt="Livro 2"></div>
+                <div class="swiper-slide"><img src="assets/book3.svg" alt="Livro 3"></div>
+                <div class="swiper-slide"><img src="assets/book4.svg" alt="Livro 4"></div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="cards">
+                <!-- 1a linha -->
+                <div class="card-description">
+                    <!-- 1a coluna -->
+                    <div class="description">
+                        <h3 class="description-title">Talvez voce tambem se interesse por...</h3>
+                        <h2 class="description-title-book">Angular 11 e Firebase</h2>
+                        <p class="description-text">Construindo uma aplicacao integrada com a plataforma do Google</p>
+                    </div>
+                    <!-- 2a coluna -->
+                    <img src="assets/angular.svg" class="description-image" alt="Livro Angular">
+                </div>
+                <!-- 2a linha -->
+                <div class="card-buttons">
+                    <!-- 1a coluna -->
+                    <ul class="buttons">
+                        <li class="buttons-item"><img src="assets/favorites.svg" alt="Favoritar livro"></li>
+                        <li class="buttons-item"><img src="assets/shopping.svg" alt="Adicionar ao carrinho"></li>
+                    </ul> 
+                </div>
+                <!-- 2a coluna -->
+                <a href="#" class="buttons-anchor">Saiba mais</a>
+        </div>
+    </section>
+
+    <section class="topics">
+            <h2 class="topics-title">TOPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="topics-list">
+                <li class="topics-item">
+                    <a href="#" class="topics-link">Android</a>
+                </li>
+                <li class="topics-item">
+                    <a href="#" class="topics-link">Marketing Digital</a>
+                </li>
+                <li class="topics-item">
+                    <a href="#" class="topics-link">Agile</a>
+                </li>
+                <li class="topics-item">
+                    <a href="#" class="topics-link">Startups</a>
+                </li>
+                <li class="topics-item">
+                    <a href="#" class="topics-link">HTML e CSS</a>
+                </li>
+                <li class="topics-item">
+                    <a href="#" class="topics-link">Python</a>
+                </li>
+                <li class="topics-item">
+                    <a href="#" class="topics-link">OO</a>
+                </li>
+                <li class="topics-item">
+                    <a href="#" class="topics-link">Java</a>
+                </li>
+            </ul>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
+    </script>
+</body>
+
+</html>
