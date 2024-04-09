@@ -2,16 +2,23 @@
 @import url("banner.css");
 @import url("carrousel.css");
 @import url("topics.css");
+@import url("contact.css");
+@import url("footer.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
 :root {
     --color-background: #ebecee;
     --color-white: #ffffff;
     --color-orange: #eb9b00;
     --color-blue: #002f52;
+    --color-black: #000000;
+    --color-grey: #474646;
+    --color-light-grey: #858585;
     --color-gradient-blue: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
     --main-font: "Poppins,", sans-serif;
+    --secondary-font: "Josefin Sans";
 }
 
 body {

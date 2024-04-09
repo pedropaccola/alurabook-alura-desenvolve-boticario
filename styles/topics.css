@@ -29,3 +29,18 @@
     font-weight: 700;
 }
 
+@media screen and (min-width: 1024px) {
+  .topics-title { 
+    font-size: 24px;
+  }
+
+  .topics-link { 
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .topics {
+    padding: 3em 30vw;
+  }
+}
